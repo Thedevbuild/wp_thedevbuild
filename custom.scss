@@ -1,0 +1,110 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+$orange: #DD4A0A !default;
+$gray-900: #212529 !default;
+$border-width: 2px !default;
+// scss-docs-start colors-map
+$colors: ("orange": $orange,
+) !default;
+// scss-docs-end colors-map
+$custom-dark: #07090F !default;
+// scss-docs-start theme-colors-map
+
+$custom-dark: #07090F !default;
+
+$theme-colors: ("dark": $custom-dark,
+  "orange": $orange);
+// scss-docs-end theme-colors-map
+$navbar-light-btn-color: rgba($orange, 1) !default;
+$rounded-pill: 50rem !default;
+$link-decoration: none !default;
+
+$navbar-light-hover-color: rgba($orange, .7) !default;
+$navbar-light-active-color: rgba($orange, .9) !default;
+
+$border-radius: .45rem !default;
+$border-radius-sm: .4rem !default;
+$border-radius-lg: .6rem !default;
+// $btn-border-radius: 0 !default;
+// $btn-border-radius-sm: 0 !default;
+// $btn-border-radius-lg: 0 !default;
+
+$component-active-bg: $orange !default;
+
+.form-select {
+  -webkit-appearance: none;
+}
+
+$navbar-light-color: $gray-900 !default;
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
+
+// Layout & components
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/containers";
+@import "node_modules/bootstrap/scss/grid";
+// @import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/transitions";
+// @import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/card";
+// @import "node_modules/bootstrap/scss/spinners";
+
+// Helpers
+@import "node_modules/bootstrap/scss/helpers";
+
+// Utilities
+@import "node_modules/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+.content-page h1 {
+  @extend .h1;
+}
+
+.content-page h2 {
+  @extend .h2;
+}
+
+.content-page h3 {
+  @extend .h3;
+}
+
+.content-page h4 {
+  @extend .h4;
+}
+
+.content-page h5 {
+  @extend .h5;
+}
+
+.content-page h6 {
+  @extend .h6;
+}
+
+.content-page p {
+  @extend p;
+}
+
+.content-page a {
+  @extend .link-orange;
+}
+
+.content-page img {
+  @extend .img-fluid;
+}
+
+.content-page ul {
+  @extend ul;
+}
+
+.content-page hr {
+  @extend hr;
+}
