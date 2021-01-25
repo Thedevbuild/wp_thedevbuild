@@ -12,12 +12,15 @@
   <!-- meta -->
   <meta name="revisit-after" content="7 days">
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet" />
 </head>
 
 <body>
 
-  <div id="loader-grid" class="container-fluid transition p-0 bg-offorange vh-100 w-100 d-flex justify-content-center align-items-center">
+  <div id="loader-grid"
+    class="container-fluid transition p-0 bg-offorange vh-100 w-100 d-flex justify-content-center align-items-center">
     <div>
       <span class="loader">
         <span class="loader-inner"></span>
@@ -28,4 +31,4 @@
 
   <div class="main-body d-none transition animate__animated" style="display: initial">
 
-  <?php get_template_part( 'template-parts/header/nav-section' ); ?>
+    <?php get_template_part( 'template-parts/header/nav-section' ); ?>

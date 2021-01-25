@@ -1,5 +1,6 @@
 <?php
 
+$devMode = $_SERVER['SERVER_NAME'] === 'blog.thedevbuild.com';
 
 if (!function_exists( 'thedevbuild_setup' )) {
   function thedevbuild_setup() {
@@ -99,14 +100,7 @@ if ( ! function_exists( 'thedevbuild_scripts' ) ) {
     // main style
     wp_enqueue_style( 
       'thedevbuild-main-style', 
-      get_template_directory_uri() . '/assets/css/main.css', 
-      [],
-      wp_get_theme()->get( 'Version' )
-    );
-
-    wp_enqueue_style( 
-      'thedevbuild-wp-style', 
-      get_template_directory_uri() . '/assets/css/wp.css', 
+      get_template_directory_uri() . ($devMode === false ? '/assets/css/main.css' : '/assets/css/main.min.css'), 
       [],
       wp_get_theme()->get( 'Version' )
     );
@@ -114,7 +108,7 @@ if ( ! function_exists( 'thedevbuild_scripts' ) ) {
     // main script
     wp_enqueue_script( 
       'thedevbuild-main-script', 
-      get_template_directory_uri() . '/assets/js/main.js', 
+      get_template_directory_uri() . ($devMode === false ? '/assets/js/main.js' : '/assets/js/main.min.js'), 
       [],
       wp_get_theme()->get( 'Version' ),
       true 

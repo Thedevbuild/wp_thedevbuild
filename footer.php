@@ -1,6 +1,7 @@
+<?php get_template_part( 'template-parts/footer/footer-schedule' ); ?>
 <?php get_template_part( 'template-parts/footer/footer-section' ); ?>
 <?php wp_footer(); ?>
-  </div>
+</div>
 </body>
 
 </html>
