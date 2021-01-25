@@ -2,7 +2,7 @@
 
 /* bootstrap css */
 @import url("bootstrap.css");
-
+@import url("wp.css");
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
